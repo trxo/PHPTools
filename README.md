@@ -1,2 +1,2 @@
-# pdoTools
-数据库操作类
+# phpTools
+封装常用的工具类文件
