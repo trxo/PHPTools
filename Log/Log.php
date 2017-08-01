@@ -28,7 +28,7 @@ class Log
             $message = var_export($message, true);
         }
         $msg = sprintf("[%s] [%s] %s\r\n", date("Y-m-d H:i:s", time()), $level, $message);
-        file_put_contents(Config::logPath . "/log_" . date("Ymd") . ".log", $msg, FILE_APPEND);
+        file_put_contents(self::LOG_PATH . "/log_" . date("Ymd") . ".log", $msg, FILE_APPEND);
     }
 
 }
