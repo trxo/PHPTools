@@ -1,8 +1,11 @@
 <?php
 
 /**
- * Class Log
  * 日志类
+ * Created by PhpStorm.
+ * User:  zxt778@gmail.com
+ * Date: 2017/8/1
+ * Time: 下午2:26
  */
 class Log
 {
