@@ -152,6 +152,22 @@ class DB
     }
 
     /**
+     * sql语句查询
+     * @param $_sql
+     * @return array
+     */
+    public function query($_sql)
+    {
+        $_stmt = $this->execute($_sql);
+        $_result = array();
+        while (!!$_objs = $_stmt->fetch()) {
+            $_result[] = $_objs;
+        }
+
+        return $_result;
+    }
+
+    /**
      * 总记录数
      * @param $_table
      * @param array $_param
